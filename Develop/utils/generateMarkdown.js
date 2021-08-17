@@ -1,46 +1,50 @@
 const fs = require('fs');
 
-function licenseShield(data) {
-  
-}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-    # ${data.projectName}
+# ${data.projectName}
 
-    ## Description
-    ${data.description}
+## Description
+${data.description}
 
-    ## Table of Contents
+## Table of Contents
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-    * [Contributing] (#contributing)
-    * [Tests] (#tests)
-    * [GitHub](#github)
-    * [Questions] (#questions)
-    
-
-    ## Installation
-    ${data.installation}
-
-    ## Usage
-    ${data.usage}
-
-    ## Credits
-    ${data.credits}
-
-    ## License
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [GitHub](#github)
+* [Questions](#questions)
 
 
-    ## Contributing
-    ${data.contributing}
+## Installation
+${data.installation}
 
-    ## Tests
-    ${data.tests}
+## Usage
+${data.usage}
+
+## Credits
+${data.credits}
+
+## License
+This project is under the ${data.license} license.
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## GitHub
+GitHub username: ${data.userName}</br>
+GitHub repository: [${data.link}](${data.link})
+
+## Questions
+Email: ${data.email}
   `;
 }
 
