@@ -9,12 +9,12 @@ const questions = () => {
     {
       type: 'input',
       name: 'userName',
-      message: 'Enter your name:',
+      message: 'Enter your GitHub username:',
       validate: userNameInput => {
         if (userNameInput) {
           return true;
         } else {
-          console.log('User name is required.')
+          console.log('Username is required.')
           return false;
         }
       }
